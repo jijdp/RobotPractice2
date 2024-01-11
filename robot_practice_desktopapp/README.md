@@ -1,3 +1,7 @@
+# Robot Framework practice (Desktop app test with RPA)
+- App : MyCRM.exe by Tom's Tech Academy
+- Tool to inspect element: Accessibility Insights for Windows
+
 # Template: Robot Framework - Minimal
 
 This is the simplest template to start from.

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240111 15:43:04.949" rpa="true" schemaversion="4">
+<suite id="s1" name="Tasks" source="c:\Users\tawatchai\Desktop\screenshot\VSCode_RobotFramework\robot_practice_desktopapp\tasks.robot">
+<test id="s1-t1" name="Add customer to CRM system" line="9">
+<kw name="Windows Run" library="RPA.Windows">
+<arg>MyCRM.exe</arg>
+<tag>window</tag>
+<doc>Use Windows Run window to launch an application.</doc>
+<msg timestamp="20240111 15:43:05.634" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\2a69f94_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240111 15:43:06.217" level="INFO">Sending keys 'MyCRM.exe' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\2a69f94_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20240111 15:43:06.870" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\2a69f94_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20240111 15:43:05.633" endtime="20240111 15:43:10.435"/>
+</kw>
+<kw name="Control Window" library="RPA.Windows">
+<arg>My CRM (Sample App)</arg>
+<tag>window</tag>
+<doc>Controls the window defined by the locator.</doc>
+<msg timestamp="20240111 15:43:10.717" level="INFO">Getting element with locator: My CRM (Sample App) and type:WindowControl</msg>
+<msg timestamp="20240111 15:43:10.717" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x000001AD95E4A650&gt;, locator='My CRM (Sample App) and type:WindowControl', name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20240111 15:43:10.718" level="INFO">Locator 'My CRM (Sample App) and type:WindowControl' produced matcher: MatchObject(locators=[('Name', 'My CRM (Sample App)', 0), ('ControlType', 'WindowControl', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:11.320" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<status status="PASS" starttime="20240111 15:43:10.437" endtime="20240111 15:43:11.825"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>id:textBoxPeopleFirstName</arg>
+<arg>Emma</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20240111 15:43:11.832" level="INFO">Getting element with locator: id:textBoxPeopleFirstName</msg>
+<msg timestamp="20240111 15:43:11.834" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:11.835" level="INFO">Locator 'id:textBoxPeopleFirstName' produced matcher: MatchObject(locators=[('AutomationId', 'textBoxPeopleFirstName', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:11.966" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x000001AD95C7BEB0&gt;, locator='id:textBoxPeopleFirstName', name='First:', automation_id='textBoxPeopleFirstName', control_type='EditControl', class_name='WindowsForms10.EDIT.app.0.378734a', left=224, right=384, top=166, bottom=191, width=160, height=25, xcenter=304, ycenter=178)</msg>
+<msg timestamp="20240111 15:43:11.969" level="INFO">Sending keys 'Emma' to element: ControlType: EditControl    ClassName: WindowsForms10.EDIT.app.0.378734a    AutomationId: textBoxPeopleFirstName    Rect: (224,166,384,191)[160x25]    Name: 'First:'    Handle: 0x2208A4(2230436)</msg>
+<status status="PASS" starttime="20240111 15:43:11.828" endtime="20240111 15:43:12.552"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>id:textBoxPeopleLastName</arg>
+<arg>Watson</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20240111 15:43:12.561" level="INFO">Getting element with locator: id:textBoxPeopleLastName</msg>
+<msg timestamp="20240111 15:43:12.563" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:12.564" level="INFO">Locator 'id:textBoxPeopleLastName' produced matcher: MatchObject(locators=[('AutomationId', 'textBoxPeopleLastName', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:12.643" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x000001AD95C7BD90&gt;, locator='id:textBoxPeopleLastName', name='Last:', automation_id='textBoxPeopleLastName', control_type='EditControl', class_name='WindowsForms10.EDIT.app.0.378734a', left=224, right=384, top=195, bottom=220, width=160, height=25, xcenter=304, ycenter=207)</msg>
+<msg timestamp="20240111 15:43:12.645" level="INFO">Sending keys 'Watson' to element: ControlType: EditControl    ClassName: WindowsForms10.EDIT.app.0.378734a    AutomationId: textBoxPeopleLastName    Rect: (224,195,384,220)[160x25]    Name: 'Last:'    Handle: 0x120342(1180482)</msg>
+<status status="PASS" starttime="20240111 15:43:12.555" endtime="20240111 15:43:13.253"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>id:radioButtonFemale</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20240111 15:43:13.262" level="INFO">Getting element with locator: id:radioButtonFemale</msg>
+<msg timestamp="20240111 15:43:13.264" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:13.265" level="INFO">Locator 'id:radioButtonFemale' produced matcher: MatchObject(locators=[('AutomationId', 'radioButtonFemale', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:13.311" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.RadioButtonControl object at 0x000001AD95C7B8B0&gt;, locator='id:radioButtonFemale', name='Female', automation_id='radioButtonFemale', control_type='RadioButtonControl', class_name='WindowsForms10.BUTTON.app.0.378734a', left=304, right=384, top=223, bottom=247, width=80, height=24, xcenter=344, ycenter=235)</msg>
+<status status="PASS" starttime="20240111 15:43:13.258" endtime="20240111 15:43:13.893"/>
+</kw>
+<kw name="Select" library="RPA.Windows">
+<arg>id:comboBoxPeopleAddressState</arg>
+<arg>WA</arg>
+<tag>action</tag>
+<doc>Select a value on the passed element if such action is supported.</doc>
+<msg timestamp="20240111 15:43:13.899" level="INFO">Getting element with locator: id:comboBoxPeopleAddressState</msg>
+<msg timestamp="20240111 15:43:13.901" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:13.902" level="INFO">Locator 'id:comboBoxPeopleAddressState' produced matcher: MatchObject(locators=[('AutomationId', 'comboBoxPeopleAddressState', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:14.213" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ComboBoxControl object at 0x000001AD95C7B6D0&gt;, locator='id:comboBoxPeopleAddressState', name='State:', automation_id='comboBoxPeopleAddressState', control_type='ComboBoxControl', class_name='WindowsForms10.COMBOBOX.app.0.378734a', left=224, right=324, top=380, bottom=406, width=100, height=26, xcenter=274, ycenter=393)</msg>
+<status status="PASS" starttime="20240111 15:43:13.896" endtime="20240111 15:43:15.714"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>id:checkBox1</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20240111 15:43:15.720" level="INFO">Getting element with locator: id:checkBox1</msg>
+<msg timestamp="20240111 15:43:15.723" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:15.724" level="INFO">Locator 'id:checkBox1' produced matcher: MatchObject(locators=[('AutomationId', 'checkBox1', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:15.897" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.CheckBoxControl object at 0x000001AD95C7BE80&gt;, locator='id:checkBox1', name='Active', automation_id='checkBox1', control_type='CheckBoxControl', class_name='WindowsForms10.BUTTON.app.0.378734a', left=224, right=292, top=689, bottom=712, width=68, height=23, xcenter=258, ycenter=700)</msg>
+<status status="PASS" starttime="20240111 15:43:15.717" endtime="20240111 15:43:16.477"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>name:Other</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20240111 15:43:16.482" level="INFO">Getting element with locator: name:Other</msg>
+<msg timestamp="20240111 15:43:16.485" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:16.486" level="INFO">Locator 'name:Other' produced matcher: MatchObject(locators=[('Name', 'Other', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:16.926" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TabItemControl object at 0x000001AD95C7B550&gt;, locator='name:Other', name='Other', automation_id='', control_type='TabItemControl', class_name='', left=191, right=244, top=115, bottom=138, width=53, height=23, xcenter=217, ycenter=126)</msg>
+<status status="PASS" starttime="20240111 15:43:16.479" endtime="20240111 15:43:17.503"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>id:button1</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20240111 15:43:17.512" level="INFO">Getting element with locator: id:button1</msg>
+<msg timestamp="20240111 15:43:17.514" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:17.514" level="INFO">Locator 'id:button1' produced matcher: MatchObject(locators=[('AutomationId', 'button1', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:17.624" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x000001AD95C7B520&gt;, locator='id:button1', name='Save', automation_id='button1', control_type='ButtonControl', class_name='WindowsForms10.BUTTON.app.0.378734a', left=298, right=392, top=480, bottom=509, width=94, height=29, xcenter=345, ycenter=494)</msg>
+<status status="PASS" starttime="20240111 15:43:17.507" endtime="20240111 15:43:18.202"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>id:2</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20240111 15:43:18.207" level="INFO">Getting element with locator: id:2</msg>
+<msg timestamp="20240111 15:43:18.209" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x000001AD95E4A200&gt;, locator='My CRM (Sample App) and type:WindowControl', name='My CRM (Sample App)', automation_id='Form1', control_type='WindowControl', class_name='WindowsForms10.Window.8.app.0.378734a', left=50, right=438, top=50, bottom=848, width=388, height=798, xcenter=244, ycenter=449)</msg>
+<msg timestamp="20240111 15:43:18.210" level="INFO">Locator 'id:2' produced matcher: MatchObject(locators=[('AutomationId', '2', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20240111 15:43:18.235" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x000001AD95C7B340&gt;, locator='id:2', name='OK', automation_id='2', control_type='ButtonControl', class_name='Button', left=973, right=1067, top=585, bottom=614, width=94, height=29, xcenter=1020, ycenter=599)</msg>
+<status status="PASS" starttime="20240111 15:43:18.204" endtime="20240111 15:43:18.809"/>
+</kw>
+<status status="PASS" starttime="20240111 15:43:05.632" endtime="20240111 15:43:18.812"/>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="PASS" starttime="20240111 15:43:04.959" endtime="20240111 15:43:18.819"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
